@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated / input reports (may contain customer data — do not commit)
+report-*.html
+*-databricks.html
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/

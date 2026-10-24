@@ -1,0 +1,2010 @@
+{
+  "source": "https://www.databricks.com/product/pricing/product-pricing/instance-types",
+  "source_data_file": "https://www.databricks.com/en-pricing-assets/data/pricing/GCP.json",
+  "scraped_on": "2026-10-23",
+  "cloud": "GCP",
+  "plan": "Enterprise",
+  "notes": "usd_per_hour = dbu_per_hour * usd_per_dbu. This is the Databricks DBU cost only; it does NOT include the underlying Google Cloud VM/infrastructure cost. Jobs Compute = Lakeflow Jobs (classic). (-lssd) denotes local SSD variant. (Photon) rows are the Photon-accelerated engine.",
+  "rates": {
+    "Jobs Compute": 0.2,
+    "Jobs Compute Photon": 0.2
+  },
+  "products": {
+    "Jobs Compute": {
+      "usd_per_dbu": 0.2,
+      "instance_count": 174,
+      "instances": [
+        {
+          "instance": "a2-highgpu-16g",
+          "vcpu": 96,
+          "memory_gb": 1360,
+          "dbu_per_hour": 63.84,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 12.768
+        },
+        {
+          "instance": "a2-highgpu-1g",
+          "vcpu": 12,
+          "memory_gb": 85,
+          "dbu_per_hour": 5.43,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.086
+        },
+        {
+          "instance": "a2-highgpu-2g",
+          "vcpu": 24,
+          "memory_gb": 170,
+          "dbu_per_hour": 10.86,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.172
+        },
+        {
+          "instance": "a2-highgpu-4g",
+          "vcpu": 48,
+          "memory_gb": 340,
+          "dbu_per_hour": 21.72,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.344
+        },
+        {
+          "instance": "a2-highgpu-8g",
+          "vcpu": 96,
+          "memory_gb": 680,
+          "dbu_per_hour": 43.44,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 8.688
+        },
+        {
+          "instance": "a2-ultragpu-1g",
+          "vcpu": 12,
+          "memory_gb": 170,
+          "dbu_per_hour": 7.98,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.596
+        },
+        {
+          "instance": "a2-ultragpu-2g",
+          "vcpu": 24,
+          "memory_gb": 340,
+          "dbu_per_hour": 15.96,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.192
+        },
+        {
+          "instance": "a2-ultragpu-4g",
+          "vcpu": 48,
+          "memory_gb": 680,
+          "dbu_per_hour": 31.92,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 6.384
+        },
+        {
+          "instance": "a2-ultragpu-8g",
+          "vcpu": 96,
+          "memory_gb": 1360,
+          "dbu_per_hour": 63.84,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 12.768
+        },
+        {
+          "instance": "a3-highgpu-1g",
+          "vcpu": 26,
+          "memory_gb": 234,
+          "dbu_per_hour": 14.13,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.826
+        },
+        {
+          "instance": "a3-highgpu-2g",
+          "vcpu": 26,
+          "memory_gb": 234,
+          "dbu_per_hour": 28.25,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 5.65
+        },
+        {
+          "instance": "a3-highgpu-4g",
+          "vcpu": 26,
+          "memory_gb": 234,
+          "dbu_per_hour": 56.51,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 11.302
+        },
+        {
+          "instance": "a3-highgpu-8g",
+          "vcpu": 26,
+          "memory_gb": 234,
+          "dbu_per_hour": 113.02,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 22.604
+        },
+        {
+          "instance": "c2-standard-16",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 2.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.576
+        },
+        {
+          "instance": "c2-standard-30",
+          "vcpu": 30,
+          "memory_gb": 120,
+          "dbu_per_hour": 5.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.08
+        },
+        {
+          "instance": "c2-standard-4",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.72,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.144
+        },
+        {
+          "instance": "c2-standard-60",
+          "vcpu": 60,
+          "memory_gb": 240,
+          "dbu_per_hour": 10.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.16
+        },
+        {
+          "instance": "c2-standard-8",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.44,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.288
+        },
+        {
+          "instance": "c3-highmem-22",
+          "vcpu": 22,
+          "memory_gb": 176,
+          "dbu_per_hour": 6.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.32
+        },
+        {
+          "instance": "c3-highmem-4",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.24
+        },
+        {
+          "instance": "c3-highmem-44",
+          "vcpu": 44,
+          "memory_gb": 352,
+          "dbu_per_hour": 13.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.64
+        },
+        {
+          "instance": "c3-highmem-8",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 2.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.48
+        },
+        {
+          "instance": "c3-highmem-88",
+          "vcpu": 88,
+          "memory_gb": 704,
+          "dbu_per_hour": 26.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 5.28
+        },
+        {
+          "instance": "c3-standard-176 (-lssd)",
+          "vcpu": 176,
+          "memory_gb": 704,
+          "dbu_per_hour": 37.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 7.48
+        },
+        {
+          "instance": "c3-standard-22 (-lssd)",
+          "vcpu": 22,
+          "memory_gb": 88,
+          "dbu_per_hour": 4.68,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.936
+        },
+        {
+          "instance": "c3-standard-4 (-lssd)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.85,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.17
+        },
+        {
+          "instance": "c3-standard-44 (-lssd)",
+          "vcpu": 44,
+          "memory_gb": 176,
+          "dbu_per_hour": 9.35,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.87
+        },
+        {
+          "instance": "c3-standard-8 (-lssd)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.7,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.34
+        },
+        {
+          "instance": "c3-standard-88 (-lssd)",
+          "vcpu": 88,
+          "memory_gb": 352,
+          "dbu_per_hour": 18.7,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.74
+        },
+        {
+          "instance": "c3d-highmem-16 (-lssd)",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 4.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.96
+        },
+        {
+          "instance": "c3d-highmem-180 (-lssd)",
+          "vcpu": 180,
+          "memory_gb": 1440,
+          "dbu_per_hour": 54,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 10.8
+        },
+        {
+          "instance": "c3d-highmem-30 (-lssd)",
+          "vcpu": 30,
+          "memory_gb": 240,
+          "dbu_per_hour": 9,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.8
+        },
+        {
+          "instance": "c3d-highmem-360 (-lssd)",
+          "vcpu": 360,
+          "memory_gb": 2880,
+          "dbu_per_hour": 108,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 21.6
+        },
+        {
+          "instance": "c3d-highmem-4 (-lssd)",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.24
+        },
+        {
+          "instance": "c3d-highmem-60 (-lssd)",
+          "vcpu": 60,
+          "memory_gb": 480,
+          "dbu_per_hour": 18,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.6
+        },
+        {
+          "instance": "c3d-highmem-8 (-lssd)",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 2.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.48
+        },
+        {
+          "instance": "c3d-highmem-90 (-lssd)",
+          "vcpu": 90,
+          "memory_gb": 720,
+          "dbu_per_hour": 27,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 5.4
+        },
+        {
+          "instance": "c3d-standard-16 (-lssd)",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 3.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.68
+        },
+        {
+          "instance": "c3d-standard-180 (-lssd)",
+          "vcpu": 180,
+          "memory_gb": 720,
+          "dbu_per_hour": 38.25,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 7.65
+        },
+        {
+          "instance": "c3d-standard-30 (-lssd)",
+          "vcpu": 30,
+          "memory_gb": 120,
+          "dbu_per_hour": 6.38,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.276
+        },
+        {
+          "instance": "c3d-standard-360 (-lssd)",
+          "vcpu": 360,
+          "memory_gb": 1440,
+          "dbu_per_hour": 76.5,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 15.3
+        },
+        {
+          "instance": "c3d-standard-4 (-lssd)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.85,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.17
+        },
+        {
+          "instance": "c3d-standard-60 (-lssd)",
+          "vcpu": 60,
+          "memory_gb": 240,
+          "dbu_per_hour": 12.75,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.55
+        },
+        {
+          "instance": "c3d-standard-8 (-lssd)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.7,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.34
+        },
+        {
+          "instance": "c3d-standard-90 (-lssd)",
+          "vcpu": 90,
+          "memory_gb": 360,
+          "dbu_per_hour": 19.13,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.826
+        },
+        {
+          "instance": "c4-standard-16",
+          "vcpu": 16,
+          "memory_gb": 60,
+          "dbu_per_hour": 4.24,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.85
+        },
+        {
+          "instance": "c4-standard-2",
+          "vcpu": 2,
+          "memory_gb": 7,
+          "dbu_per_hour": 0.53,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.11
+        },
+        {
+          "instance": "c4-standard-24",
+          "vcpu": 24,
+          "memory_gb": 90,
+          "dbu_per_hour": 6.36,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.27
+        },
+        {
+          "instance": "c4-standard-32",
+          "vcpu": 32,
+          "memory_gb": 120,
+          "dbu_per_hour": 8.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.7
+        },
+        {
+          "instance": "c4-standard-4",
+          "vcpu": 4,
+          "memory_gb": 15,
+          "dbu_per_hour": 1.06,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.21
+        },
+        {
+          "instance": "c4-standard-8",
+          "vcpu": 8,
+          "memory_gb": 30,
+          "dbu_per_hour": 2.12,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.42
+        },
+        {
+          "instance": "c4a-highmem-16 (-lssd)",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 6.97,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.394
+        },
+        {
+          "instance": "c4a-highmem-32 (-lssd)",
+          "vcpu": 32,
+          "memory_gb": 256,
+          "dbu_per_hour": 13.94,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.788
+        },
+        {
+          "instance": "c4a-highmem-4 (-lssd)",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.74,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.348
+        },
+        {
+          "instance": "c4a-highmem-48 (-lssd)",
+          "vcpu": 48,
+          "memory_gb": 384,
+          "dbu_per_hour": 20.91,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.182
+        },
+        {
+          "instance": "c4a-highmem-64 (-lssd)",
+          "vcpu": 64,
+          "memory_gb": 512,
+          "dbu_per_hour": 27.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 5.576
+        },
+        {
+          "instance": "c4a-highmem-72 (-lssd)",
+          "vcpu": 72,
+          "memory_gb": 576,
+          "dbu_per_hour": 31.36,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 6.272
+        },
+        {
+          "instance": "c4a-highmem-8 (-lssd)",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 3.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.696
+        },
+        {
+          "instance": "c4a-standard-16 (-lssd)",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 4.93,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.986
+        },
+        {
+          "instance": "c4a-standard-32 (-lssd)",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 9.86,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.972
+        },
+        {
+          "instance": "c4a-standard-4 (-lssd)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 1.23,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.246
+        },
+        {
+          "instance": "c4a-standard-48 (-lssd)",
+          "vcpu": 48,
+          "memory_gb": 192,
+          "dbu_per_hour": 14.78,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.956
+        },
+        {
+          "instance": "c4a-standard-64 (-lssd)",
+          "vcpu": 64,
+          "memory_gb": 256,
+          "dbu_per_hour": 19.71,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.942
+        },
+        {
+          "instance": "c4a-standard-72 (-lssd)",
+          "vcpu": 72,
+          "memory_gb": 288,
+          "dbu_per_hour": 22.18,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.436
+        },
+        {
+          "instance": "c4a-standard-8 (-lssd)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 2.46,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.492
+        },
+        {
+          "instance": "c4d-standard-16",
+          "vcpu": 16,
+          "memory_gb": 62,
+          "dbu_per_hour": 5.94,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.19
+        },
+        {
+          "instance": "c4d-standard-2",
+          "vcpu": 2,
+          "memory_gb": 7,
+          "dbu_per_hour": 0.74,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.15
+        },
+        {
+          "instance": "c4d-standard-32",
+          "vcpu": 32,
+          "memory_gb": 124,
+          "dbu_per_hour": 11.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.38
+        },
+        {
+          "instance": "c4d-standard-4",
+          "vcpu": 4,
+          "memory_gb": 15,
+          "dbu_per_hour": 1.49,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.3
+        },
+        {
+          "instance": "c4d-standard-8",
+          "vcpu": 8,
+          "memory_gb": 31,
+          "dbu_per_hour": 2.97,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.59
+        },
+        {
+          "instance": "e2_highcpu_16",
+          "vcpu": 16,
+          "memory_gb": 16,
+          "dbu_per_hour": 2.16,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.432
+        },
+        {
+          "instance": "e2_highcpu_32",
+          "vcpu": 32,
+          "memory_gb": 32,
+          "dbu_per_hour": 4.32,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.864
+        },
+        {
+          "instance": "e2_highmem_16",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 3.84,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.768
+        },
+        {
+          "instance": "e2_highmem_2",
+          "vcpu": 2,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.096
+        },
+        {
+          "instance": "e2_highmem_4",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 0.96,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.192
+        },
+        {
+          "instance": "e2_highmem_8",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 1.92,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.384
+        },
+        {
+          "instance": "e2_standard_16",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 2.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.576
+        },
+        {
+          "instance": "e2_standard_32",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 5.76,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.152
+        },
+        {
+          "instance": "e2_standard_4",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.72,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.144
+        },
+        {
+          "instance": "e2_standard_8",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.44,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.288
+        },
+        {
+          "instance": "g2-standard-12",
+          "vcpu": 12,
+          "memory_gb": 48,
+          "dbu_per_hour": 4.32,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.864
+        },
+        {
+          "instance": "g2-standard-16",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 5.76,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.152
+        },
+        {
+          "instance": "g2-standard-24",
+          "vcpu": 24,
+          "memory_gb": 96,
+          "dbu_per_hour": 8.64,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.728
+        },
+        {
+          "instance": "g2-standard-32",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 11.52,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.304
+        },
+        {
+          "instance": "g2-standard-4",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 1.44,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.288
+        },
+        {
+          "instance": "g2-standard-48",
+          "vcpu": 48,
+          "memory_gb": 192,
+          "dbu_per_hour": 17.28,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.456
+        },
+        {
+          "instance": "g2-standard-8",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 2.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.576
+        },
+        {
+          "instance": "g2-standard-96",
+          "vcpu": 96,
+          "memory_gb": 384,
+          "dbu_per_hour": 34.56,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 6.912
+        },
+        {
+          "instance": "g4-standard-192",
+          "vcpu": 192,
+          "memory_gb": 720,
+          "dbu_per_hour": 77.76,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 15.552
+        },
+        {
+          "instance": "g4-standard-384",
+          "vcpu": 384,
+          "memory_gb": 1440,
+          "dbu_per_hour": 155.52,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 31.104
+        },
+        {
+          "instance": "g4-standard-48",
+          "vcpu": 48,
+          "memory_gb": 180,
+          "dbu_per_hour": 19.44,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.888
+        },
+        {
+          "instance": "g4-standard-96",
+          "vcpu": 96,
+          "memory_gb": 360,
+          "dbu_per_hour": 38.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 7.776
+        },
+        {
+          "instance": "n1-highcpu-16",
+          "vcpu": 16,
+          "memory_gb": 14,
+          "dbu_per_hour": 2.14,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.428
+        },
+        {
+          "instance": "n1-highcpu-32",
+          "vcpu": 32,
+          "memory_gb": 29,
+          "dbu_per_hour": 4.27,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.854
+        },
+        {
+          "instance": "n1-highcpu-64",
+          "vcpu": 64,
+          "memory_gb": 58,
+          "dbu_per_hour": 8.54,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.708
+        },
+        {
+          "instance": "n1-highcpu-96",
+          "vcpu": 96,
+          "memory_gb": 86,
+          "dbu_per_hour": 12.82,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.564
+        },
+        {
+          "instance": "n1-highmem-16",
+          "vcpu": 16,
+          "memory_gb": 104,
+          "dbu_per_hour": 3.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.696
+        },
+        {
+          "instance": "n1-highmem-32",
+          "vcpu": 32,
+          "memory_gb": 208,
+          "dbu_per_hour": 6.96,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.392
+        },
+        {
+          "instance": "n1-highmem-4",
+          "vcpu": 4,
+          "memory_gb": 26,
+          "dbu_per_hour": 0.87,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.174
+        },
+        {
+          "instance": "n1-highmem-64",
+          "vcpu": 64,
+          "memory_gb": 416,
+          "dbu_per_hour": 13.92,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.784
+        },
+        {
+          "instance": "n1-highmem-8",
+          "vcpu": 8,
+          "memory_gb": 52,
+          "dbu_per_hour": 1.74,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.348
+        },
+        {
+          "instance": "n1-highmem-96",
+          "vcpu": 96,
+          "memory_gb": 624,
+          "dbu_per_hour": 20.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.176
+        },
+        {
+          "instance": "n1-standard-16",
+          "vcpu": 16,
+          "memory_gb": 60,
+          "dbu_per_hour": 2.82,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.564
+        },
+        {
+          "instance": "n1-standard-32",
+          "vcpu": 32,
+          "memory_gb": 120,
+          "dbu_per_hour": 5.64,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.128
+        },
+        {
+          "instance": "n1-standard-4",
+          "vcpu": 4,
+          "memory_gb": 15,
+          "dbu_per_hour": 0.71,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.142
+        },
+        {
+          "instance": "n1-standard-64",
+          "vcpu": 64,
+          "memory_gb": 240,
+          "dbu_per_hour": 11.28,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.256
+        },
+        {
+          "instance": "n1-standard-8",
+          "vcpu": 8,
+          "memory_gb": 30,
+          "dbu_per_hour": 1.41,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.282
+        },
+        {
+          "instance": "n1-standard-96",
+          "vcpu": 96,
+          "memory_gb": 360,
+          "dbu_per_hour": 16.92,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.384
+        },
+        {
+          "instance": "n2-highcpu-16",
+          "vcpu": 16,
+          "memory_gb": 16,
+          "dbu_per_hour": 2.16,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.432
+        },
+        {
+          "instance": "n2-highcpu-32",
+          "vcpu": 32,
+          "memory_gb": 32,
+          "dbu_per_hour": 4.32,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.864
+        },
+        {
+          "instance": "n2-highcpu-48",
+          "vcpu": 48,
+          "memory_gb": 48,
+          "dbu_per_hour": 6.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.296
+        },
+        {
+          "instance": "n2-highcpu-64",
+          "vcpu": 64,
+          "memory_gb": 64,
+          "dbu_per_hour": 8.64,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.728
+        },
+        {
+          "instance": "n2-highcpu-80",
+          "vcpu": 80,
+          "memory_gb": 80,
+          "dbu_per_hour": 10.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.16
+        },
+        {
+          "instance": "n2-highmem-16",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 3.84,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.768
+        },
+        {
+          "instance": "n2-highmem-2",
+          "vcpu": 2,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.096
+        },
+        {
+          "instance": "n2-highmem-32",
+          "vcpu": 32,
+          "memory_gb": 256,
+          "dbu_per_hour": 7.68,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.536
+        },
+        {
+          "instance": "n2-highmem-4",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 0.96,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.192
+        },
+        {
+          "instance": "n2-highmem-48",
+          "vcpu": 48,
+          "memory_gb": 384,
+          "dbu_per_hour": 11.52,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.304
+        },
+        {
+          "instance": "n2-highmem-64",
+          "vcpu": 64,
+          "memory_gb": 512,
+          "dbu_per_hour": 15.36,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.072
+        },
+        {
+          "instance": "n2-highmem-8",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 1.92,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.384
+        },
+        {
+          "instance": "n2-highmem-80",
+          "vcpu": 80,
+          "memory_gb": 640,
+          "dbu_per_hour": 19.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.84
+        },
+        {
+          "instance": "n2-standard-16",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 2.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.576
+        },
+        {
+          "instance": "n2-standard-32",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 5.76,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.152
+        },
+        {
+          "instance": "n2-standard-4",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.72,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.144
+        },
+        {
+          "instance": "n2-standard-48",
+          "vcpu": 48,
+          "memory_gb": 192,
+          "dbu_per_hour": 8.64,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.728
+        },
+        {
+          "instance": "n2-standard-64",
+          "vcpu": 64,
+          "memory_gb": 256,
+          "dbu_per_hour": 11.52,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.304
+        },
+        {
+          "instance": "n2-standard-8",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.44,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.288
+        },
+        {
+          "instance": "n2-standard-80",
+          "vcpu": 80,
+          "memory_gb": 320,
+          "dbu_per_hour": 14.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.88
+        },
+        {
+          "instance": "n2d-highcpu-128",
+          "vcpu": 128,
+          "memory_gb": 128,
+          "dbu_per_hour": 17.28,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.456
+        },
+        {
+          "instance": "n2d-highcpu-16",
+          "vcpu": 16,
+          "memory_gb": 16,
+          "dbu_per_hour": 2.16,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.432
+        },
+        {
+          "instance": "n2d-highcpu-224",
+          "vcpu": 224,
+          "memory_gb": 224,
+          "dbu_per_hour": 30.24,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 6.048
+        },
+        {
+          "instance": "n2d-highcpu-32",
+          "vcpu": 32,
+          "memory_gb": 32,
+          "dbu_per_hour": 4.32,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.864
+        },
+        {
+          "instance": "n2d-highcpu-48",
+          "vcpu": 48,
+          "memory_gb": 48,
+          "dbu_per_hour": 6.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.296
+        },
+        {
+          "instance": "n2d-highcpu-64",
+          "vcpu": 64,
+          "memory_gb": 64,
+          "dbu_per_hour": 8.64,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.728
+        },
+        {
+          "instance": "n2d-highcpu-80",
+          "vcpu": 80,
+          "memory_gb": 80,
+          "dbu_per_hour": 10.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.16
+        },
+        {
+          "instance": "n2d-highcpu-96",
+          "vcpu": 96,
+          "memory_gb": 96,
+          "dbu_per_hour": 12.96,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.592
+        },
+        {
+          "instance": "n2d-highmem-16",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 3.84,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.768
+        },
+        {
+          "instance": "n2d-highmem-2",
+          "vcpu": 2,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.096
+        },
+        {
+          "instance": "n2d-highmem-32",
+          "vcpu": 32,
+          "memory_gb": 256,
+          "dbu_per_hour": 7.68,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.536
+        },
+        {
+          "instance": "n2d-highmem-4",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 0.96,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.192
+        },
+        {
+          "instance": "n2d-highmem-48",
+          "vcpu": 48,
+          "memory_gb": 384,
+          "dbu_per_hour": 11.52,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.304
+        },
+        {
+          "instance": "n2d-highmem-64",
+          "vcpu": 64,
+          "memory_gb": 512,
+          "dbu_per_hour": 15.36,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.072
+        },
+        {
+          "instance": "n2d-highmem-8",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 1.92,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.384
+        },
+        {
+          "instance": "n2d-highmem-80",
+          "vcpu": 80,
+          "memory_gb": 640,
+          "dbu_per_hour": 19.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.84
+        },
+        {
+          "instance": "n2d-highmem-96",
+          "vcpu": 96,
+          "memory_gb": 768,
+          "dbu_per_hour": 23.04,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.608
+        },
+        {
+          "instance": "n2d-standard-128",
+          "vcpu": 128,
+          "memory_gb": 512,
+          "dbu_per_hour": 23.04,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.608
+        },
+        {
+          "instance": "n2d-standard-16",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 2.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.576
+        },
+        {
+          "instance": "n2d-standard-224",
+          "vcpu": 224,
+          "memory_gb": 896,
+          "dbu_per_hour": 40.32,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 8.064
+        },
+        {
+          "instance": "n2d-standard-32",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 5.76,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.152
+        },
+        {
+          "instance": "n2d-standard-4",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.72,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.144
+        },
+        {
+          "instance": "n2d-standard-48",
+          "vcpu": 48,
+          "memory_gb": 192,
+          "dbu_per_hour": 8.64,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.728
+        },
+        {
+          "instance": "n2d-standard-64",
+          "vcpu": 64,
+          "memory_gb": 256,
+          "dbu_per_hour": 11.52,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.304
+        },
+        {
+          "instance": "n2d-standard-8",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.44,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.288
+        },
+        {
+          "instance": "n2d-standard-80",
+          "vcpu": 80,
+          "memory_gb": 320,
+          "dbu_per_hour": 14.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.88
+        },
+        {
+          "instance": "n2d-standard-96",
+          "vcpu": 96,
+          "memory_gb": 384,
+          "dbu_per_hour": 17.28,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.456
+        },
+        {
+          "instance": "n4-standard-16",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 3.36,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.67
+        },
+        {
+          "instance": "n4-standard-2",
+          "vcpu": 2,
+          "memory_gb": 8,
+          "dbu_per_hour": 0.42,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.08
+        },
+        {
+          "instance": "n4-standard-32",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 6.72,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.34
+        },
+        {
+          "instance": "n4-standard-4",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.84,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.17
+        },
+        {
+          "instance": "n4-standard-8",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.68,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.34
+        },
+        {
+          "instance": "n4d-highmem-16",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 4.76,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.95
+        },
+        {
+          "instance": "n4d-highmem-2",
+          "vcpu": 2,
+          "memory_gb": 16,
+          "dbu_per_hour": 0.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.12
+        },
+        {
+          "instance": "n4d-highmem-32",
+          "vcpu": 32,
+          "memory_gb": 256,
+          "dbu_per_hour": 9.52,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.9
+        },
+        {
+          "instance": "n4d-highmem-4",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 1.19,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.24
+        },
+        {
+          "instance": "n4d-highmem-48",
+          "vcpu": 48,
+          "memory_gb": 384,
+          "dbu_per_hour": 14.28,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.86
+        },
+        {
+          "instance": "n4d-highmem-64",
+          "vcpu": 64,
+          "memory_gb": 512,
+          "dbu_per_hour": 19.04,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.81
+        },
+        {
+          "instance": "n4d-highmem-8",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 2.38,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.48
+        },
+        {
+          "instance": "n4d-standard-16",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 4.16,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.83
+        },
+        {
+          "instance": "n4d-standard-2",
+          "vcpu": 2,
+          "memory_gb": 8,
+          "dbu_per_hour": 0.52,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.1
+        },
+        {
+          "instance": "n4d-standard-32",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 8.32,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.66
+        },
+        {
+          "instance": "n4d-standard-4",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 1.04,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.21
+        },
+        {
+          "instance": "n4d-standard-48",
+          "vcpu": 48,
+          "memory_gb": 192,
+          "dbu_per_hour": 12.48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.5
+        },
+        {
+          "instance": "n4d-standard-64",
+          "vcpu": 64,
+          "memory_gb": 256,
+          "dbu_per_hour": 16.64,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.33
+        },
+        {
+          "instance": "n4d-standard-8",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 2.08,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.42
+        }
+      ]
+    },
+    "Jobs Compute Photon": {
+      "usd_per_dbu": 0.2,
+      "instance_count": 74,
+      "instances": [
+        {
+          "instance": "c3-standard-176 (-lssd) (Photon)",
+          "vcpu": 176,
+          "memory_gb": 704,
+          "dbu_per_hour": 93.5,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 18.7
+        },
+        {
+          "instance": "c3-standard-22 (-lssd) (Photon)",
+          "vcpu": 22,
+          "memory_gb": 88,
+          "dbu_per_hour": 11.7,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.34
+        },
+        {
+          "instance": "c3-standard-4 (-lssd) (Photon)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 2.13,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.425
+        },
+        {
+          "instance": "c3-standard-44 (-lssd) (Photon)",
+          "vcpu": 44,
+          "memory_gb": 176,
+          "dbu_per_hour": 23.38,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.675
+        },
+        {
+          "instance": "c3-standard-8 (-lssd) (Photon)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 4.25,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.85
+        },
+        {
+          "instance": "c3-standard-88 (-lssd) (Photon)",
+          "vcpu": 88,
+          "memory_gb": 352,
+          "dbu_per_hour": 46.75,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 9.35
+        },
+        {
+          "instance": "c3d-highmem-16 (-lssd) (Photon)",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 12,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.4
+        },
+        {
+          "instance": "c3d-highmem-180 (-lssd) (Photon)",
+          "vcpu": 180,
+          "memory_gb": 1440,
+          "dbu_per_hour": 135,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 27
+        },
+        {
+          "instance": "c3d-highmem-30 (-lssd) (Photon)",
+          "vcpu": 30,
+          "memory_gb": 240,
+          "dbu_per_hour": 22.5,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.5
+        },
+        {
+          "instance": "c3d-highmem-360 (-lssd) (Photon)",
+          "vcpu": 360,
+          "memory_gb": 2880,
+          "dbu_per_hour": 270,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 54
+        },
+        {
+          "instance": "c3d-highmem-4 (-lssd) (Photon)",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 3,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.6
+        },
+        {
+          "instance": "c3d-highmem-60 (-lssd) (Photon)",
+          "vcpu": 60,
+          "memory_gb": 480,
+          "dbu_per_hour": 45,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 9
+        },
+        {
+          "instance": "c3d-highmem-8 (-lssd) (Photon)",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.2
+        },
+        {
+          "instance": "c3d-highmem-90 (-lssd) (Photon)",
+          "vcpu": 90,
+          "memory_gb": 720,
+          "dbu_per_hour": 67.5,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 13.5
+        },
+        {
+          "instance": "c3d-standard-16 (-lssd) (Photon)",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 8.5,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.7
+        },
+        {
+          "instance": "c3d-standard-180 (-lssd) (Photon)",
+          "vcpu": 180,
+          "memory_gb": 720,
+          "dbu_per_hour": 95.63,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 19.125
+        },
+        {
+          "instance": "c3d-standard-30 (-lssd) (Photon)",
+          "vcpu": 30,
+          "memory_gb": 120,
+          "dbu_per_hour": 15.95,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.19
+        },
+        {
+          "instance": "c3d-standard-360 (-lssd) (Photon)",
+          "vcpu": 360,
+          "memory_gb": 1440,
+          "dbu_per_hour": 191.25,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 38.25
+        },
+        {
+          "instance": "c3d-standard-4 (-lssd) (Photon)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 2.13,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.425
+        },
+        {
+          "instance": "c3d-standard-60 (-lssd) (Photon)",
+          "vcpu": 60,
+          "memory_gb": 240,
+          "dbu_per_hour": 31.88,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 6.375
+        },
+        {
+          "instance": "c3d-standard-8 (-lssd) (Photon)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 4.25,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.85
+        },
+        {
+          "instance": "c3d-standard-90 (-lssd) (Photon)",
+          "vcpu": 90,
+          "memory_gb": 360,
+          "dbu_per_hour": 47.82,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 9.565
+        },
+        {
+          "instance": "c4a-highmem-16 (-lssd) (Photon)",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 17.43,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.485
+        },
+        {
+          "instance": "c4a-highmem-32 (-lssd) (Photon)",
+          "vcpu": 32,
+          "memory_gb": 256,
+          "dbu_per_hour": 34.85,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 6.97
+        },
+        {
+          "instance": "c4a-highmem-4 (-lssd) (Photon)",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 4.35,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.87
+        },
+        {
+          "instance": "c4a-highmem-48 (-lssd) (Photon)",
+          "vcpu": 48,
+          "memory_gb": 384,
+          "dbu_per_hour": 52.28,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 10.455
+        },
+        {
+          "instance": "c4a-highmem-64 (-lssd) (Photon)",
+          "vcpu": 64,
+          "memory_gb": 512,
+          "dbu_per_hour": 69.7,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 13.94
+        },
+        {
+          "instance": "c4a-highmem-72 (-lssd) (Photon)",
+          "vcpu": 72,
+          "memory_gb": 576,
+          "dbu_per_hour": 78.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 15.68
+        },
+        {
+          "instance": "c4a-highmem-8 (-lssd) (Photon)",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 8.7,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.74
+        },
+        {
+          "instance": "c4a-standard-16 (-lssd) (Photon)",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 12.33,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.465
+        },
+        {
+          "instance": "c4a-standard-32 (-lssd) (Photon)",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 24.65,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.93
+        },
+        {
+          "instance": "c4a-standard-4 (-lssd) (Photon)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 3.08,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.615
+        },
+        {
+          "instance": "c4a-standard-48 (-lssd) (Photon)",
+          "vcpu": 48,
+          "memory_gb": 192,
+          "dbu_per_hour": 36.95,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 7.39
+        },
+        {
+          "instance": "c4a-standard-64 (-lssd) (Photon)",
+          "vcpu": 64,
+          "memory_gb": 256,
+          "dbu_per_hour": 49.28,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 9.855
+        },
+        {
+          "instance": "c4a-standard-72 (-lssd) (Photon)",
+          "vcpu": 72,
+          "memory_gb": 288,
+          "dbu_per_hour": 55.45,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 11.09
+        },
+        {
+          "instance": "c4a-standard-8 (-lssd) (Photon)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 6.15,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.23
+        },
+        {
+          "instance": "e2_standard_16 (Photon)",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 7.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.44
+        },
+        {
+          "instance": "e2_standard_32 (Photon)",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 14.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.88
+        },
+        {
+          "instance": "e2_standard_4 (Photon)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 1.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.36
+        },
+        {
+          "instance": "e2_standard_8 (Photon)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 3.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.72
+        },
+        {
+          "instance": "n2-highmem-16 (Photon)",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 9.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.92
+        },
+        {
+          "instance": "n2-highmem-2 (Photon)",
+          "vcpu": 2,
+          "memory_gb": 16,
+          "dbu_per_hour": 1.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.24
+        },
+        {
+          "instance": "n2-highmem-32 (Photon)",
+          "vcpu": 32,
+          "memory_gb": 256,
+          "dbu_per_hour": 19.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.84
+        },
+        {
+          "instance": "n2-highmem-4 (Photon)",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 2.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.48
+        },
+        {
+          "instance": "n2-highmem-48 (Photon)",
+          "vcpu": 48,
+          "memory_gb": 384,
+          "dbu_per_hour": 28.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 5.76
+        },
+        {
+          "instance": "n2-highmem-64 (Photon)",
+          "vcpu": 64,
+          "memory_gb": 512,
+          "dbu_per_hour": 38.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 7.68
+        },
+        {
+          "instance": "n2-highmem-8 (Photon)",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 4.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.96
+        },
+        {
+          "instance": "n2-highmem-80 (Photon)",
+          "vcpu": 80,
+          "memory_gb": 640,
+          "dbu_per_hour": 48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 9.6
+        },
+        {
+          "instance": "n2-standard-16 (Photon)",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 7.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.44
+        },
+        {
+          "instance": "n2-standard-32 (Photon)",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 14.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.88
+        },
+        {
+          "instance": "n2-standard-4 (Photon)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 1.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.36
+        },
+        {
+          "instance": "n2-standard-48 (Photon)",
+          "vcpu": 48,
+          "memory_gb": 192,
+          "dbu_per_hour": 21.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.32
+        },
+        {
+          "instance": "n2-standard-64 (Photon)",
+          "vcpu": 64,
+          "memory_gb": 256,
+          "dbu_per_hour": 28.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 5.76
+        },
+        {
+          "instance": "n2-standard-8 (Photon)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 3.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.72
+        },
+        {
+          "instance": "n2-standard-80 (Photon)",
+          "vcpu": 80,
+          "memory_gb": 320,
+          "dbu_per_hour": 36,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 7.2
+        },
+        {
+          "instance": "n2d-highmem-16 (Photon)",
+          "vcpu": 16,
+          "memory_gb": 128,
+          "dbu_per_hour": 9.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.92
+        },
+        {
+          "instance": "n2d-highmem-2 (Photon)",
+          "vcpu": 2,
+          "memory_gb": 16,
+          "dbu_per_hour": 1.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.24
+        },
+        {
+          "instance": "n2d-highmem-32 (Photon)",
+          "vcpu": 32,
+          "memory_gb": 256,
+          "dbu_per_hour": 19.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 3.84
+        },
+        {
+          "instance": "n2d-highmem-4 (Photon)",
+          "vcpu": 4,
+          "memory_gb": 32,
+          "dbu_per_hour": 2.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.48
+        },
+        {
+          "instance": "n2d-highmem-48 (Photon)",
+          "vcpu": 48,
+          "memory_gb": 384,
+          "dbu_per_hour": 28.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 5.76
+        },
+        {
+          "instance": "n2d-highmem-64 (Photon)",
+          "vcpu": 64,
+          "memory_gb": 512,
+          "dbu_per_hour": 38.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 7.68
+        },
+        {
+          "instance": "n2d-highmem-8 (Photon)",
+          "vcpu": 8,
+          "memory_gb": 64,
+          "dbu_per_hour": 4.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.96
+        },
+        {
+          "instance": "n2d-highmem-80 (Photon)",
+          "vcpu": 80,
+          "memory_gb": 640,
+          "dbu_per_hour": 48,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 9.6
+        },
+        {
+          "instance": "n2d-highmem-96 (Photon)",
+          "vcpu": 96,
+          "memory_gb": 768,
+          "dbu_per_hour": 57.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 11.52
+        },
+        {
+          "instance": "n2d-standard-128 (Photon)",
+          "vcpu": 128,
+          "memory_gb": 512,
+          "dbu_per_hour": 57.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 11.52
+        },
+        {
+          "instance": "n2d-standard-16 (Photon)",
+          "vcpu": 16,
+          "memory_gb": 64,
+          "dbu_per_hour": 7.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 1.44
+        },
+        {
+          "instance": "n2d-standard-224 (Photon)",
+          "vcpu": 224,
+          "memory_gb": 896,
+          "dbu_per_hour": 100.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 20.16
+        },
+        {
+          "instance": "n2d-standard-32 (Photon)",
+          "vcpu": 32,
+          "memory_gb": 128,
+          "dbu_per_hour": 14.4,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 2.88
+        },
+        {
+          "instance": "n2d-standard-4 (Photon)",
+          "vcpu": 4,
+          "memory_gb": 16,
+          "dbu_per_hour": 1.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.36
+        },
+        {
+          "instance": "n2d-standard-48 (Photon)",
+          "vcpu": 48,
+          "memory_gb": 192,
+          "dbu_per_hour": 21.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 4.32
+        },
+        {
+          "instance": "n2d-standard-64 (Photon)",
+          "vcpu": 64,
+          "memory_gb": 256,
+          "dbu_per_hour": 28.8,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 5.76
+        },
+        {
+          "instance": "n2d-standard-8 (Photon)",
+          "vcpu": 8,
+          "memory_gb": 32,
+          "dbu_per_hour": 3.6,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 0.72
+        },
+        {
+          "instance": "n2d-standard-80 (Photon)",
+          "vcpu": 80,
+          "memory_gb": 320,
+          "dbu_per_hour": 36,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 7.2
+        },
+        {
+          "instance": "n2d-standard-96 (Photon)",
+          "vcpu": 96,
+          "memory_gb": 384,
+          "dbu_per_hour": 43.2,
+          "usd_per_dbu": 0.2,
+          "usd_per_hour": 8.64
+        }
+      ]
+    }
+  }
+}
