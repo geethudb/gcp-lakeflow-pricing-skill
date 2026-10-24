@@ -19,6 +19,12 @@ Data was scraped on **2026-10-23** from the Databricks pricing calculator:
 `https://www.databricks.com/product/pricing/product-pricing/instance-types`
 (underlying data file `.../en-pricing-assets/data/pricing/GCP.json`).
 
+## Files
+
+- `references/gcp-enterprise-pricing.json` — machine-readable: full per-instance list
+  (vCPU, memory, `dbu_per_hour`, `usd_per_dbu`, `usd_per_hour`) for both products.
+- `references/pricing-table.md` — the same data as human-readable tables.
+
 ## Important scope / caveats
 
 - **DBU charge only.** These figures are the Databricks software (DBU) cost. They do
@@ -33,78 +39,43 @@ Data was scraped on **2026-10-23** from the Databricks pricing calculator:
 - Rates change. Note the scrape date when you quote them, and re-scrape if stale
   (see "Refreshing the data" below).
 
-## Files
-
-- `references/gcp-enterprise-pricing.json` — machine-readable: full per-instance list
-  (vCPU, memory, `dbu_per_hour`, `usd_per_dbu`, `usd_per_hour`) for both products.
-- `references/pricing-table.md` — the same data as human-readable tables.
-- `scripts/estimate.py` — look up instances and compute cost estimates.
-- `scripts/build_databricks_cost_tab.py` — add a Databricks cost tab to a POC
-  workload-selection report (see below).
-
-## How to use
+## How to answer
 
 **Quote a rate or a specific instance.** Read `references/pricing-table.md` (or the
 JSON) and report the numbers. The $/DBU is $0.20 for both products; per-instance
-$/hr is in the table.
+DBU/hr and $/hr are in the table.
 
-**Look up / search instances:**
-```
-python3 scripts/estimate.py list                 # everything
-python3 scripts/estimate.py list n2-standard     # name substring
-python3 scripts/estimate.py list --photon        # Photon only
-python3 scripts/estimate.py list --classic       # non-Photon only
-```
-
-**Estimate a workload's Databricks cost (classic + Photon in one call):**
-```
-python3 scripts/estimate.py estimate --instance n4-highmem-32 --nodes 32 --hours 5 --runs 10
-```
-`--nodes` x `--hours` x `--runs` gives total node-hours; cost = node-hours x instance
-$/hr, shown for both Jobs Compute (classic) and Jobs Compute Photon. Always restate that
-this is the DBU charge only and the GCE VM cost is extra.
-
-**Instance matching.** Classic and Photon are matched **independently**, each against its
-own supported-instance list. If the requested instance isn't in a list (e.g.
-`n4-highmem-32`, or any `n4`/`n4d` for Photon), it is resolved to the nearest comparable
-*supported* instance — same vCPU, same shape (standard/highmem/highcpu), nearest
-family/generation — with a fallback alternative (`≈` marks a substitute). Supported
-instances are kept as-is. A Photon rate is **never derived** from the classic rate —
-Photon always maps to a real Photon-listed instance. vCPU/shape are inferred from the
-name; override with `--vcpus`/`--memory` for unusual names. To just see the mapping:
-```
-python3 scripts/estimate.py match --instance n4-highmem-32
-```
-
-## Adding a Databricks cost tab to a POC report
-
-For a "Databricks POC workload selection" report (`report-*.html`) whose Cost tab is
-rendered by JS from an embedded `compute-data` JSON:
+**Estimate a workload's Databricks cost.** Databricks bills by **DBUs**, not by VM.
+Use the billing basis `DBU/hr × $/DBU` (the published `$/hr` column is only rounded to
+2 dp — e.g. `n4-standard-32` is 6.72 × 0.20 = **$1.344/hr**, not the listed $1.34):
 
 ```
-python3 scripts/build_databricks_cost_tab.py INPUT.html [-o OUTPUT.html]
+cluster DBU/hr = Σ ( nodes × instance DBU/hr )
+Rate/hr        = cluster DBU/hr × $0.20 per DBU
+DBU/day        = Rate/hr × ( run minutes ÷ 60 ) × runs per day
+cost           = Rate/hr × total node-hours        (node-hours = nodes × hours × runs)
 ```
 
-This writes a **new** file (never overwrites the input) with a **Databricks cost** tab
-that is an **exact replica of the report's Cost tab** — every table, collapsible section
-and control — with Databricks columns appended. At runtime it deep-clones the Cost-tab
-DOM, makes all ids/control-classes unique so the clone is fully independent (it never
-corrupts the original Cost tab), and wires a scoped copy of the report's cost model to
-the new tab's **own working controls** (days, headroom, rate inputs, workload
-checkboxes, selection buttons, CSV export).
+Report both **Jobs Compute (classic)** and **Jobs Compute Photon**, and always restate
+that this is the DBU charge only — the GCE VM cost is extra.
 
-For two variants — **Jobs Compute (classic)** and **Jobs Compute Photon**, GCP
-Enterprise — it appends: comparable Databricks instance + DBU/hour + Rate/hour (+ daily
-DBU and all-in daily cost) on the Workloads and Instance-types tables, and a DBU-cost
-field folded into an all-in Total on "Compare the selections" / "Compute cost" /
-"Total cost".
+## Instance matching
 
-Instance-mapping rule: classic and Photon are matched **independently**, each against its
-own supported-instance list. Keep the original instance when it's in that list; otherwise
-substitute a same-vCPU instance (same shape, closest memory, nearest family/generation)
-as primary with a second as fallback — `≈` marks a substitute. A Photon rate is **never
-derived** from the classic rate — if a type has no Photon pricing (e.g. all `n4`/`n4d`),
-Photon substitutes a real Photon-listed same-spec instance (e.g. `n2`/`n2d`).
+Classic and Photon are matched **independently**, each against its own supported-instance
+list in the JSON. The rule:
+
+1. If the requested machine type is in the list, **keep it**.
+2. Otherwise substitute the nearest comparable *supported* instance: **same vCPU**, same
+   shape (standard / highmem / highcpu), then nearest family/generation. Offer a second
+   instance as a **fallback** alternative. Mark a substitute with `≈`.
+
+Nearest family/generation means: same family first, then the `d` sibling (`n4` ↔ `n4d`),
+then the same letter-series nearest generation (`n4` → `n2` → `n1`), then other series.
+
+A **Photon rate is never derived** from the classic rate. Several families (all `n4`/`n4d`,
+plus `n1`, `c2`, `c4`/`c4d`, GPU families) have **no Photon SKU** — for those, Photon must
+substitute a real Photon-listed same-spec instance (typically `n2`/`n2d`). Example:
+`n4-highmem-32` (32 vCPU, 256 GB) → classic `n4d-highmem-32 ≈`, Photon `n2-highmem-32 (Photon) ≈`.
 
 ## Notes on instance naming
 
